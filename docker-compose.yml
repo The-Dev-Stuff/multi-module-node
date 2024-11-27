@@ -1,0 +1,12 @@
+version: "3.9" # Compatible with Docker Compose v2+
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:latest # Ensure this pulls the latest version
+    container_name: verdaccio
+    ports:
+      - "4873:4873" # Default port for Verdaccio
+    volumes:
+      - ./storage:/storage # Persistent storage for packages
+      - ./config:/conf # Custom configuration
+    environment:
+      - VERDACCIO_PORT=4873 # Default port

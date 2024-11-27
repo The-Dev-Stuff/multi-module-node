@@ -1,0 +1,21 @@
+{
+  "name": "es6-node-library",
+  "version": "1.0.3",
+  "description": "A node library with es6 modules output",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Manny Diera",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2"
+  }
+}
