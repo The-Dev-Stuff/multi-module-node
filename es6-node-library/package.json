@@ -1,12 +1,13 @@
 {
   "name": "es6-node-library",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "A node library with es6 modules output",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "dev": "nodemon --watch src && ts-node src/index.ts",
     "test": "jest"
   },
   "keywords": [],
@@ -17,6 +18,8 @@
     "@types/node": "^22.10.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }
