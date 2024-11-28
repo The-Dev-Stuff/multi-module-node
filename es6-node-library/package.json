@@ -1,8 +1,9 @@
 {
   "name": "es6-node-library",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A node library with es6 modules output",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "nodemon --watch src --exec ts-node src/index.ts",

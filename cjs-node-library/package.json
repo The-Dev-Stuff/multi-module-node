@@ -1,8 +1,9 @@
 {
   "name": "cjs-node-library",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A node library with commonjs output",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "nodemon --watch src --exec ts-node src/index.ts",
