@@ -1,4 +1,4 @@
-import { greetFromBase } from '../src';
+import { greetFromBase } from '../src/messages';
 
 describe('Messages', () => {
   test('should return a greeting message from base project', () => {

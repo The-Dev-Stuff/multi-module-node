@@ -13,11 +13,26 @@ export default {
       type: 'module'
     }
   },
+  module: {
+    rules: [
+      {
+        test: /\.m?js/,
+        type: "javascript/auto",
+      },
+      {
+        test: /\.m?js/,
+        resolve: {
+          fullySpecified: false,
+        },
+      },
+      {
+        test: /\.json$/,
+        type: 'json'
+      }
+    ],
+  },
   resolve: {
-    alias: {
-      './messages': './messages.js',
-    },
-    extensions: ['.ts', '.js'], // Resolve both TypeScript and JavaScript files without extensions
+    extensions: ['.ts', '.js'],
     fullySpecified: false
   },
 };
