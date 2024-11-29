@@ -60,4 +60,3 @@ npm publish --registry http://0.0.0.0:4873/
 
 5. At this point, you should have both the ES6 and CommonJS libraries published to your local registry and you should be able to see them by navigating to `http://localhost:4873/`
 
-### TODO - maybe turn into an article/tutorial
